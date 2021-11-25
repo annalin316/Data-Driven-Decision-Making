@@ -1,0 +1,15 @@
+h, m, s, t = input('Rate each of the following Emotions in order separated by a space:\nHappiness (1-7):\nMeaningfulness (1-7):\nStressfulness (1-7):\nTiredness (1-7):\n').split()
+h=int(input("Please rate your happiness"))
+m=int(input("Please rate your meaningfullness"))
+s=int(input("Please rate your stress level"))
+t=int(input("Please rate your tiredness level"))
+na= ((h + m)/2) - ((s + t)/2)
+print(na)
+
+if na >=3:
+  print("Doing Well")
+elif na in range (0,3):
+  print("Doing Okay")
+else: 
+  print("Not Good)
+ 
