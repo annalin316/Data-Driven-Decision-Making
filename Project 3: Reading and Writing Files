@@ -1,0 +1,22 @@
+data=open("E5WP1_Data_File.txt", "r")
+syr_count = 0
+rch_count = 0 
+for line in data: 
+  if line.endswith("Syracuse\n"):
+    syr_count += 1
+   if line.endswith("Rochester\n"):
+    rch_count += 1
+ print (syr_count)
+ print(rch_count)
+  
+#Q2 
+perc_food_des= [37.5, 23, 65, 14, 35, 32, 54.5, 28,52, 34]
+count = 0
+total = 0
+for x in perc_food_des:
+  count = count + 1
+  toatl = total + x 
+mean = total / count 
+for x in range (len(perc_food_des)):
+  perc_food_des[x] = perc_food_des[x]/mean
+print(perc_food_des)
